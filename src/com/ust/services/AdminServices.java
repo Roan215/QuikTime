@@ -4,7 +4,7 @@ import com.ust.beans.FoodBean;
 import com.ust.beans.StoreBean;
 
 public interface AdminServices {
-	String addStore(StoreBean storebean);
+	 String addStore(StoreBean storebean);
 	 boolean modifyStore(StoreBean storebean);
 	 int removeStore(ArrayList<String> storeId);
 	 StoreBean viewStore(String storeId);
@@ -15,4 +15,5 @@ public interface AdminServices {
 	 FoodBean viewFood(String foodId);
 	 ArrayList<FoodBean> viewAllFood(String storeId);
 	 String changeOrderStatus(String orderId);
+	 
 }
