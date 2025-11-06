@@ -76,8 +76,8 @@ public class DataStructure {
 	public List<StoreBean> getStores() {
 		return stores;
 	}
-	public void setStores(List<StoreBean> stores) {
-		this.stores = stores;
+	public void setStores(StoreBean store) {
+		this.stores.add(store);
 	}
 	public List<OrderBean> getOrders() {
 		return orders;
