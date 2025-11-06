@@ -1,13 +1,13 @@
 package com.ust.beans;
 
 public class FoodBean {
-	private String foodId,name,price,foodSize,type;
+	private String foodId,name,price,foodSize,type,StoreId;
 	int quantity;
 	public FoodBean() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public FoodBean(String foodId, String name, String price, String foodSize, String type, int quantity) {
+	public FoodBean(String foodId, String name, String price, String foodSize, String type, int quantity, String storeId) {
 		super();
 		this.foodId = foodId;
 		this.name = name;
@@ -15,6 +15,13 @@ public class FoodBean {
 		this.foodSize = foodSize;
 		this.type = type;
 		this.quantity = quantity;
+		this.StoreId = storeId;
+	}
+	public String getStoreId() {
+		return StoreId;
+	}
+	public void setStoreId(String storeId) {
+		StoreId = storeId;
 	}
 	public String getFoodId() {
 		return foodId;
