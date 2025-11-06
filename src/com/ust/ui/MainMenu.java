@@ -137,6 +137,7 @@ public class MainMenu {
 						System.out.println("Enter pin:");
 						pass = sc.nextInt();
 						if (pass == 0000) {
+							sc.nextLine();
 							System.out.println("Enter Store ID : ");
 							String sid = sc.nextLine();
 							System.out.println("Enter Food ID : ");
@@ -151,6 +152,7 @@ public class MainMenu {
 						System.out.println("Enter pin:");
 						pass = sc.nextInt();
 						if (pass == 0000) {
+							sc.nextLine();
 							System.out.println("Enter Food ID : ");
 							String fid = sc.nextLine();
 							System.out.println(ad.viewFood(fid));
@@ -200,10 +202,11 @@ public class MainMenu {
 							System.out.println("Invalid Pin");
 							break;
 						}
+					case "AD000": break;
 					default:
 						System.out.println("Invalid Choice");
-					}
-				}
+					} break;
+				}break;
 			default:
 				System.out.println("Invalid Choice");
 			}
