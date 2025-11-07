@@ -12,5 +12,5 @@ public interface CustomerServices {
 	 String cancelOrder(String orderId);
 	 ArrayList<StoreBean> viewStore(String city);
 	 ArrayList<CartBean> viewCart(String userid);
-	 ArrayList <OrderBean> viewOrder();
+	 ArrayList <OrderBean> viewOrder(String userid);
 }

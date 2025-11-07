@@ -108,9 +108,6 @@ public class AdminDao implements AdminServices{
 				ds.setFood(foodbean);
 				return true;
 			}
-			else {
-				return false;
-			}
 		}
 		return false;
 	}

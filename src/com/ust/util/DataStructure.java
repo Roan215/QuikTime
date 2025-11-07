@@ -63,8 +63,8 @@ public class DataStructure {
 	public List<CartBean> getCart() {
 		return cart;
 	}
-	public void setCart(List<CartBean> cart) {
-		this.cart = cart;
+	public void setCart(CartBean cartBean) {
+		this.cart.add(cartBean);
 	}
 	public List<FoodBean> getFood() {
 		return food;
@@ -75,8 +75,8 @@ public class DataStructure {
 	public List<ProfileBean> getProfiles() {
 		return profiles;
 	}
-	public void setProfiles(List<ProfileBean> profiles) {
-		this.profiles = profiles;
+	public void setProfiles(ProfileBean profileBean) {
+		this.profiles.add(profileBean);
 	}
 	public List<StoreBean> getStores() {
 		return stores;
@@ -87,8 +87,8 @@ public class DataStructure {
 	public List<OrderBean> getOrders() {
 		return orders;
 	}
-	public void setOrders(List<OrderBean> orders) {
-		this.orders = orders;
+	public void setOrders(OrderBean orderBean) {
+		this.orders.add(orderBean);
 	}
 	
 }
