@@ -36,9 +36,9 @@ public class CostumerDao implements CustomerServices {
 		// TODO Auto-generated method stub
 		Iterator<FoodBean> itr = ds.getFood().iterator();
 		while (itr.hasNext()) {
-			if (cartBean.getFoodId() == itr.next().getFoodId()) {
+			if (cartBean.getFoodId().equals(itr.next().getFoodId())) {
 				cartBean.setType(itr.next().getType());
-				cartBean.setCost(Integer.parseInt(itr.next().getPrice()));
+				cartBean.setCost(Double.parseDouble(itr.next().getPrice()));
 				ds.setCart(cartBean);
 				return 1;
 			}
